@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <% include templates/header  %>
+  <style>
+    .card{
+      border-radius: 10px;
+    }
+  </style>
+  <body style="background-color: lightgray;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-11">
+          <form action="/auth"  method="post">
+            <div class="card shadow bg-light" style="margin-top: 60px;">
+              <div class="card-body">
+                    <div class="text-center">
+                      <img src="/images/medal.png" width="60" class="logo"  alt="medal">
+                    </div>
+                    <h4 class="text-center mt-3">E-SERTIFIKAT</h4>
+                    <hr>
+                    <div class="text-center">
+                      <%- messages.eror %>
+                      <%- messages.error %>
+                    </div>
+                    <div class="form-group">
+                      <label for="username">Email Address</label>
+                      <input type="text" id="email" class="form-control" required name="email" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" required name="password" class="form-control" placeholder="Enter Password">
+                        </div>
+                        <button class="btn btn-dark w-100"><i class="fa fa-sign-in"></i> Masuk</button>
+                        <br>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    <% include templates/script  %>
+  </body>
+</html>

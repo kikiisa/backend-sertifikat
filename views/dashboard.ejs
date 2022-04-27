@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <% include templates/header %>
+  <body style="background-color: lightgray;">
+    <% include templates/navbar %>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-body">
+                <h3>Dashboard</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-white text-center bg-primary mb-3">
+                            <div class="card-body">
+                              <h5 class="card-title">Total certificate <strong><%= sertifikat %></strong></h5>
+                              <i class="fa fa-certificate fa-5x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white text-center bg-dark mb-3">
+                            <div class="card-body">
+                              <h5 class="card-title">Total Received <strong>50</strong></h5>
+                              <i class="fa fa-user fa-5x"></i>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white text-center bg-danger mb-3">
+                            <div class="card-body">
+                              <h5 class="card-title">Total Users <strong>50</strong></h5>
+                              <i class="fa fa-th-list fa-5x"></i>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% include templates/script  %>
+  </body>
+</html>
